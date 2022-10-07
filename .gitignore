@@ -1,3 +1,5 @@
+.vscode
+
 1_lru_cache/CMakeFiles
 1_lru_cache/CMakeCache.txt
 1_lru_cache/cmake_install.cmake
