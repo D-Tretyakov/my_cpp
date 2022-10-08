@@ -5,3 +5,4 @@
 1_lru_cache/cmake_install.cmake
 1_lru_cache/.ninja*
 1_lru_cache/build.ninja
+1_lru_cache/*.exe
