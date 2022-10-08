@@ -8,6 +8,6 @@ LRUCache::LRUCache()
 
 int main()
 {
-    LRUCache cache;
+    LRUCache<int> cache;
     return 0;
 }
