@@ -1,8 +1,13 @@
 #include <iostream>
+#include "lru_cache.h"
 
+LRUCache::LRUCache()
+{
+    std::cout << "LRUCache created" << std::endl;
+}
 
 int main()
 {
-    std::cout << "Hello!" << std::endl;
+    LRUCache cache;
     return 0;
 }
