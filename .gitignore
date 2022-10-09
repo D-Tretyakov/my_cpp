@@ -2,7 +2,9 @@
 
 1_lru_cache/CMakeFiles
 1_lru_cache/CMakeCache.txt
-1_lru_cache/cmake_install.cmake
+1_lru_cache/*.cmake
 1_lru_cache/.ninja*
 1_lru_cache/build.ninja
 1_lru_cache/*.exe
+1_lru_cache/_deps
+1_lru_cache/lib
