@@ -6,7 +6,7 @@
 template<typename T>
 struct LRUCache
 {
-    LRUCache(int a_size) : m_size(a_size) {};
+    LRUCache(size_t a_size) : m_size(a_size) {};
     
     void update(const T& a_entry);
     const std::list<T>& get_state() const;
@@ -18,8 +18,8 @@ struct LRUCache
         std::unordered_map<T, ListIt> m_hash;
         std::list<T> m_list;
 
-        int m_size;
-        int m_cache_hits;
+        size_t m_size;
+        size_t m_cache_hits;
 };
 
 
