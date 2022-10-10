@@ -39,7 +39,7 @@ TEST(LRUCacheTest, ValuesLessThanSize)
     );
 }
 
-TEST(LRUCacheTest, MillionValues)
+TEST(LRUCacheTest, MillionRandomValues)
 {
     LRUCache<int> cache{10};
     std::minstd_rand gen(0);
