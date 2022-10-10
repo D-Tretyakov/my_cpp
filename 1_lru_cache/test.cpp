@@ -51,6 +51,6 @@ TEST(LRUCacheTest, MillionValues)
     using namespace testing;
     ASSERT_THAT(
         cache.get_state(), 
-        ElementsAre(1, 1, 7, 9, 10, 2, 6, 4, 3, 8)
+        ElementsAre(6, 3, 4, 7, 5, 6, 5, 1, 2, 6)
     );
 }
