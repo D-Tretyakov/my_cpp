@@ -24,6 +24,7 @@ add_executable(test_lru_cache ${SRC_FILES})
 target_link_libraries(
     test_lru_cache
     GTest::gtest_main
+    GTest::gmock_main
 )
 
 include(GoogleTest)
