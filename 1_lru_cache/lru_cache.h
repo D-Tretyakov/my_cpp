@@ -6,7 +6,7 @@
 template<typename T>
 struct LRUCache
 {
-    LRUCache(size_t a_size) : m_size(a_size) {};
+    LRUCache(size_t a_size);
     
     void update(const T& a_entry);
     const std::list<T>& get_state() const;
@@ -24,6 +24,15 @@ struct LRUCache
 
 
 //Methods definitions
+template<typename T>
+LRUCache<T>::LRUCache(size_t a_size)
+: m_size(a_size)
+{
+    if (m_size == 0) 
+        throw std::runtime_error("Cannot construct cache with size 0");
+}
+
+
 template<typename T>
 void LRUCache<T>::update(const T& entry)
 {

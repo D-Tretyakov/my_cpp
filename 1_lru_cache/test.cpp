@@ -4,14 +4,7 @@
 
 TEST(LRUCacheTest, InitZeroSize) 
 {
-    LRUCache<int> cache{0};
-
-    EXPECT_TRUE(cache.get_state().empty());
-    
-    cache.update(11);
-    cache.update(12);
-    cache.update(13);
-    EXPECT_TRUE(cache.get_state().empty());
+    EXPECT_THROW(LRUCache<int> cache{0}, std::runtime_error);
 }
 
 TEST(LRUCacheTest, SimpleOne)
